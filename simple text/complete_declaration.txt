@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<declaration>
+  <dateDepot>27/11/2022 18:18:23</dateDepot>
+  <uuid>fa8d18ec-0db9-4a39-b1f4-caba0c31329b</uuid>
+  <origine>ADEL</origine>
+  <complete>true</complete>
+  <attachedFiles>
+    <attachedFiles>
+      <fileName>VUE_PDF_DU_RECEPISSE_DU_DEPOT_XML</fileName>
+      <serverFileName/>
+      <base64EncodedContent/>
+    </attachedFiles>
+  </attachedFiles>
+  <declarationVersion>20171221</declarationVersion>
+  <activConsultantDto>
+    <neant>true</neant>
+  </activConsultantDto>
+  <activProfCinqDerniereDto>
+    <items>
+      <items>
+        <motif>
+          <id>CREATION</id>
+          <label/>
+        </motif>
+        <commentaire>Fonction exercée du 20 Mai au 4 Juillet 2022 
+        [Données non publiées]
+    </commentaire>
+        <description>Ministre des Solidarités, de l'Autonomie et des Personnes handicapées</description>
+        <employeur>MINISTERE DES SOLIDARITES, DE L'AUTONOMIE ET DES PERSONNES HANDICAPEES</employeur>
+        <remuneration>
+          <brutNet>Net</brutNet>
+          <montant>
+            <montant>
+              <annee>2022</annee>
+              <montant>10 312</montant>
+            </montant>
+          </montant>
+        </remuneration>
+        <dateDebut>05/2022</dateDebut>
+        <dateFin>07/2022</dateFin>
+      </items>
+    </items>
+    <neant>false</neant>
+  </activProfCinqDerniereDto>
+  <activProfConjointDto>
+    <items>
+      <items>
+        <motif>
+          <id>CREATION</id>
+          <label/>
+        </motif>
+        <commentaire/>
+        <nomConjoint>
+            [Données non publiées]
+        </nomConjoint>
+        <employeurConjoint>CENTRE HOSPITALIER DU HAUT-BUGEY</employeurConjoint>
+        <activiteProf>Infirmière</activiteProf>
+      </items>
+    </items>
+    <neant>false</neant>
+  </activProfConjointDto>
+  <fonctionBenevoleDto>
+    <neant>true</neant>
+  </fonctionBenevoleDto>
+  <mandatElectifDto>
+    <items>
+      <items>
+        <motif>
+          <id>CREATION</id>
+          <label/>
+        </motif>
+        <commentaire>REVENUS NETS IMPOSABLES
+        [Données non publiées]
+    </commentaire>
+        <descriptionMandat>DEPUTE</descriptionMandat>
+        <remuneration>
+          <brutNet>Net</brutNet>
+          <montant>
+            <montant>
+              <annee>2017</annee>
+              <montant>67 047</montant>
+            </montant>
+            <montant>
+              <annee>2018</annee>
+              <montant>71 042</montant>
+            </montant>
+            <montant>
+              <annee>2019</annee>
+              <montant>71 105</montant>
+            </montant>
+            <montant>
+              <annee>2020</annee>
+              <montant>70 773</montant>
+            </montant>
+            <montant>
+              <annee>2021</annee>
+              <montant>70 676</montant>
+            </montant>
+            <montant>
+              <annee>2022</annee>
+              <montant>27 289</montant>
+            </montant>
+          </montant>
+        </remuneration>
+        <dateDebut>01/2017</dateDebut>
+        <dateFin/>
+      </items>
+      <items>
+        <motif>
+          <id>CREATION</id>
+          <label/>
+        </motif>
+        <commentaire>REVENUS NETS IMPOSABLES
+        [Données non publiées]
+    </commentaire>
+        <descriptionMandat>PRESIDENT DU DEPARTEMENT 01</descriptionMandat>
+        <remuneration>
+          <brutNet>Net</brutNet>
+          <montant>
+            <montant>
+              <annee>2015</annee>
+              <montant>16865</montant>
+            </montant>
+            <montant>
+              <annee>2016</annee>
+              <montant>23035</montant>
+            </montant>
+            <montant>
+              <annee>2017</annee>
+              <montant>20120</montant>
+            </montant>
+          </montant>
+        </remuneration>
+        <dateDebut>04/2015</dateDebut>
+        <dateFin>07/2017</dateFin>
+      </items>
+      <items>
+        <motif>
+          <id>CREATION</id>
+          <label/>
+        </motif>
+        <commentaire>J'ai été élu président de groupe LR le 6 Novembre 2019. Cette fonction n'octroie aucune rémunération supplémentaire</commentaire>
+        <descriptionMandat>Président du Groupe Les Républicains à l'Assemblée nationale</descriptionMandat>
+        <remuneration>
+          <brutNet>Net</brutNet>
+          <montant>
+            <montant>
+              <annee>2019</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2020</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2021</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2022</annee>
+              <montant>0</montant>
+            </montant>
+          </montant>
+        </remuneration>
+        <dateDebut>11/2019</dateDebut>
+        <dateFin>05/2022</dateFin>
+      </items>
+      <items>
+        <motif>
+          <id>CREATION</id>
+          <label/>
+        </motif>
+        <commentaire>
+        [Données non publiées]
+    </commentaire>
+        <descriptionMandat>CONSEILLER DEPARTEMENTAL</descriptionMandat>
+        <remuneration>
+          <brutNet>Net</brutNet>
+          <montant>
+            <montant>
+              <annee>2017</annee>
+              <montant>28 007</montant>
+            </montant>
+            <montant>
+              <annee>2018</annee>
+              <montant>24 201</montant>
+            </montant>
+            <montant>
+              <annee>2019</annee>
+              <montant>16 386</montant>
+            </montant>
+            <montant>
+              <annee>2020</annee>
+              <montant>16 386</montant>
+            </montant>
+            <montant>
+              <annee>2021</annee>
+              <montant>16 384</montant>
+            </montant>
+            <montant>
+              <annee>2022</annee>
+              <montant>6 827</montant>
+            </montant>
+          </montant>
+        </remuneration>
+        <dateDebut>07/2017</dateDebut>
+        <dateFin/>
+      </items>
+      <items>
+        <motif>
+          <id>CREATION</id>
+          <label/>
+        </motif>
+        <commentaire/>
+        <descriptionMandat>Département de l'Ain - Président du Groupe majoritaire l'Ain de toute nos forces</descriptionMandat>
+        <remuneration>
+          <brutNet>Net</brutNet>
+          <montant>
+            <montant>
+              <annee>2017</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2018</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2019</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2020</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2021</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2022</annee>
+              <montant>0</montant>
+            </montant>
+          </montant>
+        </remuneration>
+        <dateDebut>07/2017</dateDebut>
+        <dateFin>10/2022</dateFin>
+      </items>
+    </items>
+    <neant>false</neant>
+  </mandatElectifDto>
+  <participationDirigeantDto>
+    <items>
+      <items>
+        <motif>
+          <id>CREATION</id>
+          <label/>
+        </motif>
+        <commentaire>Président du SDIS 01. Activité arrêtée depuis ma démission de la présidence du département en juillet 2017</commentaire>
+        <nomSociete>SDIS 01</nomSociete>
+        <activite>Service départemental d'incendie et de secours</activite>
+        <remuneration>
+          <brutNet>Brut</brutNet>
+          <montant>
+            <montant>
+              <annee>2015</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2016</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2017</annee>
+              <montant>0</montant>
+            </montant>
+          </montant>
+        </remuneration>
+        <dateDebut>04/2015</dateDebut>
+        <dateFin>07/2017</dateFin>
+      </items>
+      <items>
+        <motif>
+          <id>CREATION</id>
+          <label/>
+        </motif>
+        <commentaire>Président de l'association AINTOURISME qui développe et promeut la politique touristique du Département de l'Ain.</commentaire>
+        <nomSociete>ASSOCIATION AINTOURISME</nomSociete>
+        <activite>Président d'Aintourisme qui a pour objet la politique touristique du Département</activite>
+        <remuneration>
+          <brutNet>Net</brutNet>
+          <montant>
+            <montant>
+              <annee>2017</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2018</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2019</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2020</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2021</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2022</annee>
+              <montant>0</montant>
+            </montant>
+          </montant>
+        </remuneration>
+        <dateDebut>07/2017</dateDebut>
+        <dateFin/>
+      </items>
+      <items>
+        <motif>
+          <id>CREATION</id>
+          <label/>
+        </motif>
+        <commentaire>Mon élection comme président du groupe LR à l'assemblée nationale date du 6 Novembre 2019. Ce titre n'octroie pas une rémunération supplémentaire.</commentaire>
+        <nomSociete>Assemblée nationale - Groupe Les Républicains -</nomSociete>
+        <activite>Président du Groupe Les Républicains à l'Assemblée nationale</activite>
+        <remuneration>
+          <brutNet>Net</brutNet>
+          <montant>
+            <montant>
+              <annee>2019</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2020</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2021</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2022</annee>
+              <montant>0</montant>
+            </montant>
+          </montant>
+        </remuneration>
+        <dateDebut>11/2019</dateDebut>
+        <dateFin>05/2022</dateFin>
+      </items>
+      <items>
+        <motif>
+          <id>CREATION</id>
+          <label/>
+        </motif>
+        <commentaire>Promotion du patrimoine culinaire et gastronomique du Département de l'Ain</commentaire>
+        <nomSociete>ASSOCIATION SAVEURS DE L'AIN</nomSociete>
+        <activite>Président de l'association Saveurs de l'Ain qui a pour objet de promouvoir la gastronomie de notre Département</activite>
+        <remuneration>
+          <brutNet>Net</brutNet>
+          <montant>
+            <montant>
+              <annee>2019</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2020</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2021</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2022</annee>
+              <montant>0</montant>
+            </montant>
+          </montant>
+        </remuneration>
+        <dateDebut>05/2019</dateDebut>
+        <dateFin/>
+      </items>
+      <items>
+        <motif>
+          <id>CREATION</id>
+          <label/>
+        </motif>
+        <commentaire>Association - parti politique Création Décembre 2018 Nous avons changé de noms à plusieurs reprises : d'abord la France des territoires, puis Dans l'Action puis Les Amis de Damien Abad, nouveau nom depuis Septembre 2020.</commentaire>
+        <nomSociete>Association Les Amis de Damien Abad</nomSociete>
+        <activite>Président de l'association Les Amis de Damien Abad</activite>
+        <remuneration>
+          <brutNet>Net</brutNet>
+          <montant>
+            <montant>
+              <annee>2018</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2019</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2020</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2021</annee>
+              <montant>0</montant>
+            </montant>
+            <montant>
+              <annee>2022</annee>
+              <montant>0</montant>
+            </montant>
+          </montant>
+        </remuneration>
+        <dateDebut>12/2018</dateDebut>
+        <dateFin/>
+      </items>
+    </items>
+    <neant>false</neant>
+  </participationDirigeantDto>
+  <participationFinanciereDto>
+    <items>
+      <items>
+        <motif>
+          <id>CREATION</id>
+          <label/>
+        </motif>
+        <commentaire>
+        [Données non publiées]
+    </commentaire>
+        <nomSociete>ORANGE</nomSociete>
+        <evaluation>877</evaluation>
+        <remuneration>néant</remuneration>
+        <capitalDetenu/>
+        <nombreParts>83</nombreParts>
+        <actiConseil>Non</actiConseil>
+      </items>
+      <items>
+        <motif>
+          <id>CREATION</id>
+          <label/>
+        </motif>
+        <commentaire>
+        [Données non publiées]
+    </commentaire>
+        <nomSociete>CREDIT AGRICOLE SA</nomSociete>
+        <evaluation>2910</evaluation>
+        <remuneration>néant</remuneration>
+        <capitalDetenu/>
+        <nombreParts>341</nombreParts>
+        <actiConseil>Non</actiConseil>
+      </items>
+      <items>
+        <motif>
+          <id>CREATION</id>
+          <label/>
+        </motif>
+        <commentaire>
+        [Données non publiées]
+    </commentaire>
+        <nomSociete>AIRBUS</nomSociete>
+        <evaluation>1929</evaluation>
+        <remuneration>NEANT</remuneration>
+        <capitalDetenu/>
+        <nombreParts>20</nombreParts>
+        <actiConseil>Non</actiConseil>
+      </items>
+      <items>
+        <motif>
+          <id>CREATION</id>
+          <label/>
+        </motif>
+        <commentaire>
+        [Données non publiées]
+    </commentaire>
+        <nomSociete>L'OREAL</nomSociete>
+        <evaluation>6552</evaluation>
+        <remuneration>NEANT</remuneration>
+        <capitalDetenu/>
+        <nombreParts>20</nombreParts>
+        <actiConseil>Non</actiConseil>
+      </items>
+    </items>
+    <neant>false</neant>
+  </participationFinanciereDto>
+  <activCollaborateursDto>
+    <items>
+      <items>
+        <motif>
+          <id>CREATION</id>
+          <label/>
+        </motif>
+        <commentaire/>
+        <nom>LOPES MAGNUSON</nom>
+        <employeur>Néant</employeur>
+        <descriptionActivite/>
+      </items>
+      <items>
+        <motif>
+          <id>CREATION</id>
+          <label/>
+        </motif>
+        <commentaire/>
+        <nom>FOUGNIES REBECCA</nom>
+        <employeur>Néant</employeur>
+        <descriptionActivite/>
+      </items>
+      <items>
+        <motif>
+          <id>CREATION</id>
+          <label/>
+        </motif>
+        <commentaire/>
+        <nom>SAUZEDDE ORIANE</nom>
+        <employeur>Néant</employeur>
+        <descriptionActivite/>
+      </items>
+      <items>
+        <motif>
+          <id>CREATION</id>
+          <label/>
+        </motif>
+        <commentaire/>
+        <nom>ASTIC ANTOINE</nom>
+        <employeur>INIUM SAS</employeur>
+        <descriptionActivite>Conseil en financement de l'innovation</descriptionActivite>
+      </items>
+    </items>
+    <neant>false</neant>
+  </activCollaborateursDto>
+  <observationInteretDto>
+    <neant>true</neant>
+  </observationInteretDto>
+  <general>
+    <typeDeclaration>
+      <id>DIA</id>
+      <label>Déclaration d'intérêts et d'activités modificative</label>
+    </typeDeclaration>
+    <mandat>
+      <label>Député ou sénateur</label>
+    </mandat>
+    <qualiteMandat>
+      <typeMandat>Député</typeMandat>
+      <codCategorieMandat>PAR</codCategorieMandat>
+      <nomCategorieMandat>Député ou sénateur</nomCategorieMandat>
+      <codTypeMandatFichier>depute</codTypeMandatFichier>
+      <labelTypeMandat>Député</labelTypeMandat>
+      <labelOrgane>Département d'élection</labelOrgane>
+      <codeListeOrgane>ZEP</codeListeOrgane>
+    </qualiteMandat>
+    <organe>
+      <codeOrgane>01</codeOrgane>
+      <codeListeOrgane>ZEP</codeListeOrgane>
+      <nomListeOrgane>Zones d'élection des parlementaires</nomListeOrgane>
+      <labelOrgane>Ain(01)</labelOrgane>
+      <labelDeclaration/>
+      <organeParent/>
+    </organe>
+    <qualiteDeclarant/>
+    <qualiteDeclarantForPDF>Député/Ain(01)</qualiteDeclarantForPDF>
+    <dateDebutMandat>20/06/2022</dateDebutMandat>
+    <dateFinMandat/>
+    <dateDernDeclar/>
+    <regimeMatrimonial/>
+    <regimeMatrimonialComments/>
+    <nomSociete/>
+    <nomSocieteMere/>
+    <chiffreAffaire/>
+    <nbLogements/>
+    <declarationModificative>true</declarationModificative>
+    <etablissement/>
+    <declarant>
+      <civilite>M.</civilite>
+      <nom>ABAD</nom>
+      <prenom>DAMIEN</prenom>
+      <email>
+            [Données non publiées]
+        </email>
+      <dateNaissance>05/04/1980</dateNaissance>
+      <pieceIdentite/>
+      <telephoneDec>
+            [Données non publiées]
+        </telephoneDec>
+      <adresseDec>
+        <voie>
+            [Données non publiées]
+        </voie>
+        <complement>
+            [Données non publiées]
+        </complement>
+        <codePostal>
+            [Données non publiées]
+        </codePostal>
+        <ville>
+            [Données non publiées]
+        </ville>
+        <pays>
+            [Données non publiées]
+        </pays>
+      </adresseDec>
+    </declarant>
+  </general>
+</declaration>
