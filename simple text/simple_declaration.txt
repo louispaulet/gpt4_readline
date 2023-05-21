@@ -1,0 +1,61 @@
+<declaration>
+<dateDepot>27/11/2022 18:18:23</dateDepot>
+<uuid>fa8d18ec-0db9-4a39-b1f4-caba0c31329b</uuid>
+<origine>ADEL</origine>
+<complete>true</complete>
+<general>
+<typeDeclaration>
+<id>DIA</id>
+<label>Déclaration d'intérêts et d'activités modificative</label>
+</typeDeclaration>
+<mandat>
+<label>Député ou sénateur</label>
+</mandat>
+<qualiteMandat>
+<typeMandat>Député</typeMandat>
+<codCategorieMandat>PAR</codCategorieMandat>
+<nomCategorieMandat>Député ou sénateur</nomCategorieMandat>
+<codTypeMandatFichier>depute</codTypeMandatFichier>
+<labelTypeMandat>Député</labelTypeMandat>
+<labelOrgane>Département d'élection</labelOrgane>
+<codeListeOrgane>ZEP</codeListeOrgane>
+</qualiteMandat>
+<organe>
+<codeOrgane>01</codeOrgane>
+<codeListeOrgane>ZEP</codeListeOrgane>
+<nomListeOrgane>Zones d'élection des parlementaires</nomListeOrgane>
+<labelOrgane>Ain(01)</labelOrgane>
+<labelDeclaration/>
+<organeParent/>
+</organe>
+<qualiteDeclarant/>
+<qualiteDeclarantForPDF>Député/Ain(01)</qualiteDeclarantForPDF>
+<dateDebutMandat>20/06/2022</dateDebutMandat>
+<dateFinMandat/>
+<dateDernDeclar/>
+<regimeMatrimonial/>
+<regimeMatrimonialComments/>
+<nomSociete/>
+<nomSocieteMere/>
+<chiffreAffaire/>
+<nbLogements/>
+<declarationModificative>true</declarationModificative>
+<etablissement/>
+<declarant>
+<civilite>M.</civilite>
+<nom>ABAD</nom>
+<prenom>DAMIEN</prenom>
+<email> [Données non publiées] </email>
+<dateNaissance>05/04/1980</dateNaissance>
+<pieceIdentite/>
+<telephoneDec> [Données non publiées] </telephoneDec>
+<adresseDec>
+<voie> [Données non publiées] </voie>
+<complement> [Données non publiées] </complement>
+<codePostal> [Données non publiées] </codePostal>
+<ville> [Données non publiées] </ville>
+<pays> [Données non publiées] </pays>
+</adresseDec>
+</declarant>
+</general>
+</declaration>
