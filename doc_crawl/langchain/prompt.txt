@@ -1,0 +1,23 @@
+Please read the list of links at this link: 
+
+https://raw.githubusercontent.com/louispaulet/gpt4_readline/main/doc_crawl/langchain/urls_get_started.txt
+
+For each link in this list, read it.
+
+----
+
+When you are done learning about Langchain, please write a simple langchain app that allows a user to ask questions to a pdf of several pages.
+The pdf file to use as input is located here:
+
+https://github.com/louispaulet/gpt4_readline/blob/main/simple%20text/wikipedia_sarkozy_simple_pdf.pdf
+
+No need to read this file, just use the link as the input for one function.
+
+
+Remember, you goal is to:
+1. learn how to use Langchain by reading a list of links
+2. write a demo app that takes a pdf at a URL and saves it into a vector database
+3. write a demo QA app for google colab to allow a user to query the database for answers.
+
+You can use openAI api if needed. I would like the vector database to be local, use any technology suitable for storing multi-page pdfs.
+Write code in code blocks, in the style of a python expert.
