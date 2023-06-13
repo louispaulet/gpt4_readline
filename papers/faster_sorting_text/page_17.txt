@@ -1,0 +1,79 @@
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+
+Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate
+
+credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.
+
+45. Google. Protocol buffers, version 0.2.5; https://developers.google.com/protocol-buffers (2022).
+
+© The Author(s) 2023
+
+Nature | Vol 618 | 8 June 2023 | 263
+
+Methods
+
+Background AlphaZero. AlphaZero33 is an RL algorithm that leverages MCTS as a policy improvement operator. It consists of (1) a representation net- work f rep that outputs a latent representation ht of the state St; and (2) a prediction network f pred that predicts the expected return (the value) vˆt and a policy (that is, distribution over the action space) πˆt from a given latent state. The algorithm uses the true dynamics and reward when planning. MuZero38 is a model-based variant of Alpha Zero that has the same representation and prediction networks, but also learns a model of the dynamics and predicts rewards, which it uses for planning. Specifically, it learns a dynamics network f dyn that predicts k+1 resulting from a transition. the next latent state hht Note that the subscript t denotes timesteps in the real environment and the superscript k represents timesteps in the model.
+
+k+1 and reward rˆt
+
+hh
+
+t
+
+=
+
+f
+
+rep
+
+(
+
+SS
+
+)
+
+t
+
+hh
+
+k t
+
++1
+
+k , ^ r t
+
++1
+
+=
+
+f
+
+dyn
+
+k hh aa , t
+
+k t
+
+(
+
+)
+
+^ , ^ = v π f t t
+
+pred
+
+(
+
+hh
+
+)
+
+t
+
+(1)
+
+(2)
+
+(3)
+
+On reaching a new state, AlphaZero proceeds by first encoding the state into a latent representation with the representation network. Then, the true dynamics or dynamics network (for MuZero) as well as the prediction network f pred(ht) are used to simulate several trajectories that fill out a search tree, by sampling state transitions. At each node, the actions are selected using an optimistic strategy called the predic- tor upper confidence tree bound32, meant to balance exploration (trying new actions) and exploitation (progressing further down the subtree of the current estimate of the best action). This strategy starts out by following the predicted policy πˆt closely, and gradually shifts towards maximizing the predicted value function. Ultimately, an action is recommended by sampling from the root node with probability proportional to its visit count during MCTS. The predicted policy is then trained to match the visit counts of the MCTS policy in an attempt to distil the search procedure into a policy such that subsequent itera- tions of MCTS will disregard nodes that are not promising.

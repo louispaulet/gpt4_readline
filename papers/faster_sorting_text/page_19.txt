@@ -1,0 +1,19 @@
+Correctness cost. For the correctness cost function, we implemented three types of cost function. The first one is defined as the percentage of incorrectly placed items: P PC t where P is the total number of items P to place and PCt is number of correctly placed items at timestep t. The second variant is the square root of this equation. The final cost func- t and this is what tion takes the square root of the difference yielded the best performance.
+
+PC−
+
+−
+
+Program transformations. We enabled several program transforma- tions such as adding an instruction to increase the size of the program (Add Transform), swapping two instructions (Swap Transform), ran- domly changing an Opcode for an instruction (Opcode Transform), randomly sampling an Operand for a chosen instruction (Operand Transform) and randomly sample an Opcode and its corresponding Operands (Instruction Transform). It is possible to influence the sam- pling of these transforms to encourage some to be sampled more or less frequently. We optimized the weights for sampling transforms by running an extensive hyperparameter sweep.
+
+Investigative studies for AlphaDev variants We now present a set of investigative studies that help to better under- stand the advantages and limitations of the DRL and the stochastic search learning algorithms used in AlphaDev. We compare AlphaDev to AlphaDev-S. We implemented two variants of AlphaDev-S: (1) Cold Start (AlphaDev-S-CS) and (2) Warm Start (AlphaDev-S-WS). AlphaDev-S-CS uses no previous information and has to generate a program from
+
+an empty program buffer. AlphaDev-S-WS’s buffer is warm started with a correct sorting program (for example, optimal sorting network assembly program) and it edits the program to optimize it further. We compared the variants with AlphaDev in both the individual and vari- able sort algorithm setups.
+
+Because AlphaDev always learns from scratch with no previous knowl- edge, the direct comparison would be to the cold start stochastic search version: AlphaDev-S-CS. However, as initial near-optimal programs may sometimes be available, we also compare AlphaDev to the warm start stochastic search version: AlphaDev-S-WS.
+
+It should be noted that the stochastic search variants are unable to optimize directly for latency, as this would make learning infeasible because of computational efficiency. As such, our AlphaDev-S variants optimize for algorithm length. Then, at the end of training, we iterate through the set of generated programs for AlphaDev-S across varying lengths and identify the program with the lowest latency.
+
+In each case, the stochastic search algorithms (AlphaDev-S) are run using at least the same computational resources and wall-clock time to that of AlphaDev.
+
+Fixed sort. We first examine the performance of the various approaches for the fixed sort algorithms. In this case, all algorithmic variants opti- mize for algorithm length as algorithm length and latency are highly correlated in the conditional branchless setting (see Supplementary Information for more details).

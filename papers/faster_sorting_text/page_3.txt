@@ -1,0 +1,27 @@
+(cid:89)(cid:68)(cid:85)(cid:76)(cid:68)(cid:69)(cid:79)(cid:72)(cid:66)(cid:86)(cid:82)(cid:85)(cid:87)(cid:66)(cid:21)(cid:11)(cid:76)(cid:81)(cid:87)(cid:15) (cid:76)(cid:81)(cid:87)(cid:13)(cid:12)(cid:29)
+
+(cid:17)(cid:47)(cid:68)(cid:69)(cid:72)(cid:79)
+
+(cid:7)(cid:21)(cid:15) (cid:8)(cid:72)(cid:71)(cid:76)
+
+(cid:30) (cid:39)(cid:72)(cid:87)(cid:72)(cid:85)(cid:80)(cid:76)(cid:81)(cid:72) (cid:87)(cid:75)(cid:72) (cid:81)(cid:88)(cid:80)(cid:69)(cid:72)(cid:85) (cid:82)(cid:73) (cid:72)(cid:79)(cid:72)(cid:80)(cid:72)(cid:81)(cid:87)(cid:86) (cid:70)(cid:80)(cid:83) (cid:30) (cid:40)(cid:91)(cid:76)(cid:87) (cid:76)(cid:73) (cid:79)(cid:72)(cid:86)(cid:86) (cid:87)(cid:75)(cid:68)(cid:81) (cid:21)(cid:72)(cid:79)(cid:72)(cid:80)(cid:72)(cid:81)(cid:87)(cid:86) (cid:77)(cid:81)(cid:72) (cid:30) (cid:37)(cid:72)(cid:79)(cid:82)(cid:90) (cid:85)(cid:82)(cid:88)(cid:87)(cid:76)(cid:81)(cid:72) (cid:86)(cid:82)(cid:85)(cid:87)(cid:86) (cid:21) (cid:72)(cid:79)(cid:72)(cid:80)(cid:72)(cid:81)(cid:87)(cid:86) (cid:80)(cid:82)(cid:89) (cid:80)(cid:82)(cid:89) (cid:70)(cid:80)(cid:83) (cid:80)(cid:82)(cid:89) (cid:70)(cid:80)(cid:82)(cid:89)(cid:79) (cid:80)(cid:82)(cid:89) (cid:70)(cid:80)(cid:82)(cid:89)(cid:74) (cid:8)(cid:72)(cid:70)(cid:91)(cid:15) (cid:8)(cid:72)(cid:68)(cid:91) (cid:80)(cid:82)(cid:89)
+
+(cid:11)(cid:8)(cid:85)(cid:86)(cid:76)(cid:12)(cid:15) (cid:8)(cid:72)(cid:68)(cid:91) (cid:23)(cid:11)(cid:8)(cid:85)(cid:86)(cid:76)(cid:12)(cid:15) (cid:8)(cid:72)(cid:70)(cid:91) (cid:8)(cid:72)(cid:68)(cid:91)(cid:15) (cid:8)(cid:72)(cid:70)(cid:91) (cid:8)(cid:72)(cid:68)(cid:91)(cid:15) (cid:8)(cid:72)(cid:71)(cid:91)
+
+(cid:8)(cid:72)(cid:70)(cid:91)(cid:15) (cid:8)(cid:72)(cid:71)(cid:91) (cid:8)(cid:72)(cid:71)(cid:91)(cid:15) (cid:11)(cid:8)(cid:85)(cid:86)(cid:76)(cid:12)
+
+(cid:8)(cid:72)(cid:68)(cid:91)(cid:15) (cid:23)(cid:11)(cid:8)(cid:85)(cid:86)(cid:76)(cid:12)
+
+(cid:96)
+
+(cid:96)
+
+(cid:17)(cid:47)(cid:68)(cid:69)(cid:72)(cid:79)(cid:29)
+
+(cid:85)(cid:72)(cid:87)(cid:84)
+
+Fig. 1 | The relationship between C++ and assembly programs. a, A C++ implementation of a variable sort 2 function that sorts any input sequence of up to two elements. b, The C++ implementation in a is compiled to this equivalent low-level assembly representation.
+
+AssemblyGame. The representation function is interchangeable and captures the underlying structure of assembly programs. The primary AlphaDev representation is based on Transformers34.
+
+Using AlphaDev, we have discovered fixed and variable sort algo- rithms from scratch that are both new and more efficient than the state-of-the-art human benchmarks. The fixed sort solutions for sort 3, sort 4 and sort 5 discovered by AlphaDev have been integrated into the standard sort function in the LLVM standard C++ library3. This library is used by several million users including universities and numerous international companies35. In addition, we analyse the new algorithm discoveries, compare AlphaDev to stochastic search optimization approaches and apply AlphaDev to further domains to showcase the generality of the approach.

@@ -1,0 +1,41 @@
+Transformer encoder Transformers are natural text encoders and have had much success with language models recently14,34,41. As such, this motivated us to adapt the standard transformer to model assembly instructions. We developed and incorporated a transformer encoder, our adaptation of the MultiQuery transformer encoder42, into the AlphaDev representa- tion network to represent the assembly instructions. Each assembly instruction’s Opcode and corresponding Operands are converted to one-hot encodings and concatenated to form the raw input sequence. This is fed through a multilayer transformer encoder, which maps it to corresponding embedding vectors (see Extended Data Fig. 1b for an illustration).
+
+Latency value functions Latency is an important reward signal that is used to guide the agent in discovering performant algorithms. To better estimate latency,
+
+we implemented a dual value function setup, whereby AlphaDev has two value function heads: one predicting algorithm correctness and the second predicting algorithm latency. The latency head is used to directly predict the latency of a given program by using the program’s actual computed latency as a Monte Carlo target for AlphaDev during training. This dual-head approach achieved substantially better results than the vanilla, single head value function setup when optimizing for real latency.
+
+Results Discovering faster sort algorithms We trained the AlphaDev agent from scratch to generate a range of fixed sort and variable sort algorithms that are both correct and achieve lower latency than the state-of-the-art human benchmarks.
+
+Fixed sorting algorithms We considered three fundamental algorithms: sort 3, sort 4 and sort 5. The state-of-the-art human benchmarks for these algorithms are sorting networks43 as they generate efficient, conditional branchless assembly code. This means that all instructions are executed sequen- tially and there is no branching involved. Improving on these algo- rithms is challenging as they are already highly optimized. As seen in Table 1a, AlphaDev is able to find algorithms with fewer instructions than the human benchmarks for sort 3 and sort 5 and matches the state-of-the-art performance on sort 4. These shorter algorithms do indeed lead to lower latency as the algorithm length and latency are correlated for the conditional branchless case; see Appendix B in Sup- plementary Information for more details. We also explored scaling to slightly larger sorts using a variant of AlphaDev. We managed to save three instructions on sort 6, two instructions on sort 7 and one instruction on sort 8, which provides a promising basis for future work. See Appendix C in Supplementary Information for an overview of the approach.
+
+Variable sorting algorithms We considered three variable sorting algorithms: VarSort3, VarSort4 and VarSort5. The human benchmark in each case is defined as an algo- rithm that, for a given input length, calls the corresponding sorting network. In this case, branching is required, which greatly increases the complexity of the problem as the agent needs to (1) determine how many subalgorithms it needs to construct and (2) build the body
+
+Nature | Vol 618 | 8 June 2023 | 259
+
+a
+
+d
+
+A
+
+B
+
+C
+
+A
+
+B
+
+C
+
+D
+
+b
+
+Original
+
+c
+
+AlphaDev
+
+(cid:48)(cid:72)(cid:80)(cid:82)(cid:85)(cid:92)(cid:62)(cid:19)(cid:64)(cid:3)(cid:32)(cid:3)(cid:36) (cid:48)(cid:72)(cid:80)(cid:82)(cid:85)(cid:92)(cid:62)(cid:20)(cid:64)(cid:3)(cid:32)(cid:3)(cid:37) (cid:48)(cid:72)(cid:80)(cid:82)(cid:85)(cid:92)(cid:62)(cid:21)(cid:64)(cid:3)(cid:32)(cid:3)(cid:38)

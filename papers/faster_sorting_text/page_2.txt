@@ -1,0 +1,25 @@
+can only sort sequences of length 3), whereas variable sort algorithms can sort a sequence of varying size (for example, variable sort 5 can sort sequences ranging from one to five elements).
+
+We formulate the problem of discovering new, efficient sorting algo- rithms as a single-player game that we refer to as AssemblyGame. In this game, the player selects a series of low-level CPU instructions, which we refer to as assembly instructions30, to combine to yield a new and efficient sorting algorithm. This is challenging as the player needs to consider the combinatorial space of assembly instructions to yield an algorithm that is both provably correct and fast. The hardness of the AssemblyGame arises not only from the size of the search space, which is similar to extremely challenging games such as chess (10120 games)31 and Go (10700 games)32, but also from the nature of the reward function. A single incorrect instruction in the AssemblyGame can potentially invalidate the entire algorithm, making exploration in this space of games incredibly challenging.
+
+To play the game, we introduce AlphaDev, a learning agent that is trained to search for correct and efficient algorithms. This agent is comprised of two core components, namely (1) a learning algorithm and (2) a representation function. The AlphaDev learning algorithm can incorporate both DRL as well as stochastic search optimization algorithms to play AssemblyGame. The primary learning algorithm in AlphaDev is an extension of AlphaZero33, a well-known DRL algo- rithm, in which a neural network is trained to guide a search to solve
+
+1Deepmind, London, UK. 2Google, Mountain View, CA, USA. 3These authors contributed equally: Daniel J. Mankowitz, Andrea Michi, Anton Zhernov, Marco Gelmi, Marco Selvi, Cosmin Paduraru, Edouard Leurent. ✉e-mail: dmankowitz@deepmind.com
+
+Nature | Vol 618 | 8 June 2023 | 257
+
+a
+
+b
+
+(cid:89)(cid:82)(cid:76)(cid:71) (cid:89)(cid:68)(cid:85)(cid:76)(cid:68)(cid:69)(cid:79)(cid:72)(cid:66)(cid:86)(cid:82)(cid:85)(cid:87)(cid:66)(cid:21)(cid:11)(cid:76)(cid:81)(cid:87) (cid:79)(cid:72)(cid:81)(cid:74)(cid:87)(cid:75)(cid:15) (cid:76)(cid:81)(cid:87) (cid:13)(cid:68)(cid:12) (cid:94)
+
+(cid:18)(cid:18) (cid:39)(cid:72)(cid:87)(cid:72)(cid:85)(cid:80)(cid:76)(cid:81)(cid:72) (cid:87)(cid:75)(cid:72) (cid:81)(cid:88)(cid:80)(cid:69)(cid:72)(cid:85) (cid:82)(cid:73) (cid:72)(cid:79)(cid:72)(cid:80)(cid:72)(cid:81)(cid:87)(cid:86) (cid:86)(cid:90)(cid:76)(cid:87)(cid:70)(cid:75) (cid:11)(cid:79)(cid:72)(cid:81)(cid:74)(cid:87)(cid:75)(cid:12) (cid:94)
+
+(cid:70)(cid:68)(cid:86)(cid:72) (cid:19)(cid:29) (cid:70)(cid:68)(cid:86)(cid:72) (cid:20)(cid:29)
+
+(cid:18)(cid:18) (cid:40)(cid:91)(cid:76)(cid:87) (cid:76)(cid:73) (cid:79)(cid:72)(cid:86)(cid:86) (cid:87)(cid:75)(cid:68)(cid:81) (cid:21)(cid:72)(cid:79)(cid:72)(cid:80)(cid:72)(cid:81)(cid:87)(cid:86) (cid:85)(cid:72)(cid:87)(cid:88)(cid:85)(cid:81)(cid:30)
+
+(cid:70)(cid:68)(cid:86)(cid:72) (cid:21)(cid:29)
+
+(cid:18)(cid:18) (cid:37)(cid:72)(cid:79)(cid:82)(cid:90) (cid:85)(cid:82)(cid:88)(cid:87)(cid:76)(cid:81)(cid:72) (cid:86)(cid:82)(cid:85)(cid:87)(cid:86) (cid:21)(cid:72)(cid:79)(cid:72)(cid:80)(cid:72)(cid:81)(cid:87)(cid:86) (cid:76)(cid:81)(cid:87) (cid:87)(cid:80)(cid:83) (cid:32) (cid:68)(cid:62)(cid:19)(cid:64)(cid:30) (cid:68)(cid:62)(cid:19)(cid:64) (cid:32) (cid:11)(cid:68)(cid:62)(cid:20)(cid:64) (cid:31) (cid:68)(cid:62)(cid:19)(cid:64)(cid:12) (cid:34) (cid:68)(cid:62)(cid:20)(cid:64) (cid:29) (cid:68)(cid:62)(cid:19)(cid:64)(cid:30) (cid:68)(cid:62)(cid:20)(cid:64) (cid:32) (cid:11)(cid:68)(cid:62)(cid:20)(cid:64) (cid:31) (cid:87)(cid:80)(cid:83)(cid:12) (cid:34) (cid:87)(cid:80)(cid:83) (cid:29) (cid:68)(cid:62)(cid:20)(cid:64)(cid:30) (cid:85)(cid:72)(cid:87)(cid:88)(cid:85)(cid:81)(cid:30)

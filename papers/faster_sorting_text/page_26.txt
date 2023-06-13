@@ -1,0 +1,23 @@
+initialized with a near-optimal program, is able to match the performance of AlphaDev, which
+
+discovers the optimal programs from scratch. (b) Indicates the number of programs explored
+
+by each approach to find the optimal solution. Note that AlphaDev-S-CS explores orders
+
+of magnitude more programs for each sort algorithm. For sort 3 and sort 5 AlphaDev-S-WS
+
+explores orders of magnitude more programs than AlphaDev to find the optimal solution.
+
+(c) The approximate wall clock time to generate the shortest program for each sort length.
+
+AlphaDev-S-WS is more computationally efficient than AlphaDev for branchless sort. How-
+
+ever, as will be shown in Extended Data Table 3, when branching is introduced, AlphaDev
+
+outperforms AlphaDev-S-WS, which tends to get stuck in locally optimal solutions.
+
+Extended Data Table 3 | Comparison of AlphaDev and AlphaDev-S on variable sort
+
+(a) Presents the latency results for the programs discovered by each approach. The reported latency corresponds to the 5th percentile of latencies measured across 100 machines. The ± [Lower, Upper] reports the lower and upper confidence intervals respectively. In this setting, AlphaDev optimizes directly for real, measured latency. Note that AlphaDev outperforms each approach
+
+and AlphaDev-S-CS is unable to find a solution in each case. (b) In the variable sort setting, both AlphaDev-S variants explore orders of magnitude more programs compared to AlphaDev.

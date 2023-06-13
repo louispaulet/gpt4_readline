@@ -1,0 +1,23 @@
+Faster sorting algorithms discovered using deep reinforcement learning
+
+https://doi.org/10.1038/s41586-023-06004-9
+
+Received: 25 July 2022
+
+Accepted: 23 March 2023
+
+Published online: 7 June 2023
+
+Open access
+
+Check for updates
+
+Daniel J. Mankowitz1,3 ✉, Andrea Michi1,3, Anton Zhernov1,3, Marco Gelmi1,3, Marco Selvi1,3, Cosmin Paduraru1,3, Edouard Leurent1,3, Shariq Iqbal1, Jean-Baptiste Lespiau1, Alex Ahern1, Thomas Köppe1, Kevin Millikin1, Stephen Gaffney1, Sophie Elster1, Jackson Broshear1, Chris Gamble1, Kieran Milan1, Robert Tung1, Minjae Hwang2, Taylan Cemgil1, Mohammadamin Barekatain1, Yujia Li1, Amol Mandhane1, Thomas Hubert1, Julian Schrittwieser1, Demis Hassabis1, Pushmeet Kohli1, Martin Riedmiller1, Oriol Vinyals1 & David Silver1
+
+Fundamental algorithms such as sorting or hashing are used trillions of times on any given day1. As demand for computation grows, it has become critical for these algorithms to be as performant as possible. Whereas remarkable progress has been achieved in the past2, making further improvements on the efficiency of these routines has proved challenging for both human scientists and computational approaches. Here we show how artificial intelligence can go beyond the current state of the art by discovering hitherto unknown routines. To realize this, we formulated the task of finding a better sorting routine as a single-player game. We then trained a new deep reinforcement learning agent, AlphaDev, to play this game. AlphaDev discovered small sorting algorithms from scratch that outperformed previously known human benchmarks. These algorithms have been integrated into the LLVM standard C++ sort library3. This change to this part of the sort library represents the replacement of a component with an algorithm that has been automatically discovered using reinforcement learning. We also present results in extra domains, showcasing the generality of the approach.
+
+Human intuition and know-how have been crucial in improving algo- rithms. However, many algorithms have reached a stage whereby human experts have not been able to optimize them further, leading to an ever-growing computational bottleneck. The work in classical program synthesis literature, spanning many decades, aims to gen- erate correct programs and/or optimize programs using proxies for latency. These include enumerative search techniques4–7 and stochastic search5,6,8–10 as well as the more recent trend of using deep learning in program synthesis for generating correct programs11–16. Using deep reinforcement learning (DRL), we can take this a step further by generat- ing correct and performant algorithms by optimizing for actual meas- ured latency at the CPU instruction level, by more efficiently searching and considering the space of correct and fast programs compared to previous work.
+
+One of the fundamental questions in computer science is how to sort a sequence17–20. This is taught in elementary computer science classes around the world21,22 and is used ubiquitously by a vast range of applications23–25. Decades of computer science research have focused on discovering and optimizing sorting algorithms26–28. A key component of practical solutions is a small sort over a short sequence of elements; this algorithm is called repeatedly when sorting large arrays that use divide-and-conquer approaches29. In this work, we focus on two types of small sort algorithm: (1) the fixed sort and (2) the variable sort. Fixed sort algorithms sort sequences of a fixed length (for example, sort 3
+
+can only sort sequences of length 3), whereas variable sort algorithms can sort a sequence of varying size (for example, variable sort 5 can sort sequences ranging from one to five elements).

@@ -1,0 +1,65 @@
+removal of a single instruction. d, An optimal classic sorting network comparator configuration that has been improved by AlphaDev. See the AlphaDev copy move for more details. e,f, The assembly pseudocode before applying the AlphaDev copy move (e) and after applying the AlphaDev copy move (f), resulting in the removal of a single instruction.
+
+of the main algorithm in parallel. The agent may also need to call subalgorithms from other subalgorithms. In this case, optimizing for length leads to significantly shorter algorithms compared to the human benchmarks as seen in Table 1a. However, owing to the com- plexities introduced by branching, latency and length are not always correlated; see Supplementary Information for more details. As such, we implemented a procedure that measures the actual latency of the programs by taking the fifth percentile of latency measurements across 100 different machines, with computed confidence intervals44, and optimize this metric. See Methods for the full benchmarking setup. When optimizing for latency, the agent improves significantly on the human benchmarks in each case as seen in Table 1b.
+
+New algorithm discoveries The solutions discovered by AlphaDev include new and exciting algo- rithmic discoveries that lead to more efficient performance. In the fixed sort setting, we found that AlphaDev discovered two interesting sequences of instructions that, when applied to a sorting network algo- rithm, reduce the algorithm by one assembly instruction each time. We refer to each sequence of instructions as (1) the AlphaDev swap move and (2) the AlphaDev copy move respectively.
+
+AlphaDev swap move Figure 3a presents an optimal sorting network for three elements (see Methods for an overview of sorting networks). We will explain how AlphaDev has improved the circled network segment. There are many variants of this structure that are found in sorting networks of various sizes, and the same argument applies in each case. The circled part of the network (last two comparators) can be seen as a sequence of instructions that takes an input sequence ⟨A, B, C⟩ and transforms each input as shown in Table 2a (left). However, a comparator on wires B and C precedes this operator and therefore input sequences where B ≤ C are guaranteed. This means that it is enough to compute min(A, B) as the first output instead of min(A, B, C) as shown in Table 2a (right). The pseudocode difference between Fig. 3b,c demonstrates how the AlphaDev swap move saves one instruction each time it is applied.
+
+AlphaDev copy move Figure 3d presents a sorting network configuration, consisting of three comparators, that is applied across four wires. This configuration is found in a sort 8 sorting network and corresponds to an operator tak- ing four inputs ⟨A, B, C, D⟩ and transforming them into four outputs
+
+260 | Nature | Vol 618 | 8 June 2023
+
+a
+
+b
+
+Length < 2
+
+Yes
+
+Yes
+
+Yes
+
+Sort 4
+
+Sort 3
+
+Sort 2
+
+Length = 4?
+
+Length = 3?
+
+Length = 2?
+
+No
+
+No
+
+No
+
+Return
+
+Length versus 2
+
+Length = 2
+
+Length > 2
+
+Sort 3
+
+Sort 2
+
+Yes
+
+Length = 3?
+
+No
+
+Sort 4 given first 3 elements are sorted
+
+Return
+
+Fig. 4 | Fundamentally different algorithms discovered by AlphaDev. a, A flow diagram of the variable sort 4 (VarSort4) human benchmark algorithm. In this algorithm, a sequence of unsorted numbers are input into the algorithm. If the sequence length is four, three or two numbers, then the corresponding sort 4, sort 3 or sort 2 sorting network is called that sorts the resulting sequence. The result is then returned and output by the function. b, The VarSort4 algorithm discovered by AlphaDev. This algorithm also receives sequences of length four,

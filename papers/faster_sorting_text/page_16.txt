@@ -1,0 +1,83 @@
+Vol. 55. (Springer, 2008).
+
+22. Knebl, H. Algorithms and Data Structures (Springer, 2020). 23. Karatzoglou, A., Baltrunas, L. & Shi, Y. Learning to rank for recommender systems. In Proc.
+
+of the 7th ACM Conference on Recommender Systems 493–494 (ACM, 2013). 24. Yang, J. Y., Zhang, B. & Mao, Y. Study on Information Retrieval Sorting Algorithm in
+
+Network-BasedManufacturing Environment. In Applied Mechanics and Materials Vol. 484, 183–186 (Trans Tech Publishing, 2014).
+
+25. Krallmann, J., Schwiegelshohn, U. & Yahyapour, R. On the design and evaluation of job
+
+schedulingalgorithms. In Workshop on Job Scheduling Strategies for Parallel Processing 17–42 (Springer, 1999).
+
+26. White, S. K., Martinez, T. & Rudolph, G. Generating a novel sort algorithm using
+
+Reinforcement Programming. In Proc. IEEE Congress on Evolutionary Computation 1–8 (IEEE, 2010).
+
+27. Srivastava, S., Gulwani, S. & Foster, J. S. From program verification to program synthesis.
+
+In Proc. of the 37th Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages 313–326 (ACM, 2010).
+
+28. Ansel, J. et al. Petabricks: a language and compiler for algorithmic choice. ACM Sigplan
+
+Notices 44, 38–49 (2009).
+
+29. Smith, D. R. The design of divide and conquer algorithms. Sci. Comput. Program. 5, 37–58
+
+(1985). Irvine, K. R. et al. Assembly Language for Intel-Based Computers (Prentice Hall, 2003).
+
+30.
+
+31. Shannon, C. E. XXII. Programming a computer for playing chess. London, Edinb. Dublin
+
+46. Google. VarInt protocol buffer serialization and deserialization, version 0.2.5; https://
+
+Philos. Mag. J. Sci. 41.314, 256–275 (1950).
+
+developers.google.com/protocol-buffers/docs/encoding (2022).
+
+32. Silver, D. et al. Mastering the game of Go with deep neural networks and tree search.
+
+47. Protvin, R. & Levenberg, J. Why Google stores billions of lines of code in a single
+
+Nature 529, 484–489 (2016).
+
+repository. Commun. ACM 59, 78–87 (2016).
+
+33. Silver, D. et al. A general reinforcement learning algorithm that masters chess, shogi, and
+
+Go through self-play. Science 362, 1140–1144 (2018).
+
+34. Vaswani, A. et al. Attention is all you need. Adv. Neural Inform. Proc. Syst. 30, 5999–6009
+
+(2017).
+
+35. LLVM. LLVM users https://llvm.org/Users.html (LLVM, 2022). 36. Bartlett, J. Learn to Program with Assembly 271–273 (Apress, 2021). 37. Sutton, R. S. & Barto, A. G. Reinforcement Learning: An Introduction 2nd edn (MIT Press, 2018). 38. Schrittwieser, J. et al. Mastering atari, go, chess and shogi by planning with a learned
+
+model. Nature 588, 604–609 (2020).
+
+39. Maillard, O.-A., Ryabko, D. & Munos, R. Selecting the state-representation in reinforcement learning. Adv. Neural Inform. Proc. Syst. 24, 2627–2635 (2011).
+
+40. Qian, R. et al. Spatiotemporal contrastive video representation learning. In Proc. IEEE/CVF
+
+Conference on Computer Vision and Pattern Recognition 6964–6974 (IEEE, 2021).
+
+41. Brown, T. et al. Language models are few-shot learners. Adv. Neural Inform. Proc. Syst. 33,
+
+1877–1901 (2020).
+
+42. Shazeer, N. Fast transformer decoding: one write-head is all you need. Preprint at https://
+
+arxiv.org/abs/1911.02150 (2019).
+
+43. Bundala, D. & Závodny, J. Optimal sorting networks. In Proc. International Conference on
+
+Language and Automata Theory and Applications 236–247 (Springer, 2014). 44. Hahn, G. J. & Meeker, W. Q. Statistical Intervals: A Guide for Practitioners Vol. 92
+
+(John Wiley & Sons, 2011).
+
+48. Berman, I. et al. Multi-collision resistant hash functions and their applications. In Proc. Annual International Conference on the Theory and Applications of Cryptographic Techniques 133–161 (Springer, 2018).
+
+49. Damgård, I. B. Collision free hash functions and public key signature schemes. In Workshop on the Theory and Application of of Cryptographic Techniques 203–216 (Springer, 1987).
+
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.

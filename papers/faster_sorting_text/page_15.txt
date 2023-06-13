@@ -1,0 +1,77 @@
+262 | Nature | Vol 618 | 8 June 2023
+
+functions49 define function correctness by the number of hashing collisions. Therefore, in this case, AlphaDev can optimize for minimiz- ing collisions as well as latency. AlphaDev can also, in theory, optimize complicated logic components within the body of large, impressive functions. We hope that AlphaDev can provide interesting insights and inspire new approaches in both the artificial intelligence and program synthesis communities.
+
+Online content Any methods, additional references, Nature Portfolio reporting summa- ries, source data, extended data, supplementary information, acknowl- edgements, peer review information; details of author contributions and competing interests; and statements of data and code availability are available at https://doi.org/10.1038/s41586-023-06004-9.
+
+1.
+
+Amazon. Amazon S3—two trillion objects, 1.1 million requests/second. AWS https://aws. amazon.com/blogs/aws/amazon-s3-two-trillion-objects-11-million-requests-second/ (2013).
+
+2. Cormen, T. H. et al. Introduction to Algorithms (MIT Press, 2022). 3. Gelmi, M. Introduce branchless sorting functions for sort3, sort4 and sort5. LLVM.org
+
+https://reviews.llvm.org/D118029 (2022).
+
+4. Bansal, S. & Aiken, A. Automatic generation of peephole superoptimizers. ACM SIGARCH
+
+Comput. Arch. News 34, 394–403 (2006).
+
+5. Alur, R. et al. Syntax-Guided Synthesis (IEEE, 2013). 6.
+
+Phothilimthana, P. M. et al. Scaling up superoptimization. In Proc. Twenty-First International Conference on Architectural Support for Programming Languages and Operating Systems 297–310 (ACM, 2016). Barthe, G. et al. From relational verification to SIMD loop synthesis. In Proc. of the 18th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming 123–134 (ACM, 2013).
+
+7.
+
+8. Schkufza, E., Sharma, R. & Aiken, A. Stochastic superoptimization. ACM SIGPLAN Notices
+
+9.
+
+48, 305–315 (2013). Bunel, R. et al. Learning to superoptimize programs. In Proc. International Conference on Learning Representations (ICLR, 2016).
+
+10. Phothilimthana, P. M. et al. Chlorophyll: synthesis-aided compiler for low-power spatial
+
+architectures. ACM SIGPLAN Notices 49, 396–407 (2014).
+
+11. Vinyals, O. et al. Grammar as a foreign language. Adv. Neural Inform. Proc. Syst. 28,
+
+2773–2781 (2015).
+
+12. Chen, X., Liu, C. & Song, D. Towards synthesizing complex programs from input-
+
+output examples. In Proc. International Conference on Learning Representations (ICLR, 2018).
+
+13. Devlin, J. et al. Robustfill: neural program learning under noisy i/o. In Proc. International
+
+Conference on Machine Learning 990–998 (PMLR, 2017).
+
+14. Li, Y. et al. Competition-level code generation with AlphaCode. Science 378, 1092–1097
+
+(2022).
+
+15. Pearce, H. et al. Can codex and other large language models help us fix security bugs?
+
+Preprint at https://arxiv.org/abs/2112.02125 (2021).
+
+16. Chen, M. et al. Evaluating large language models trained on code. Preprint at https://
+
+arxiv.org/abs/2107.03374 (2021).
+
+17. Bingmann, T., Marianczuk, J. & Sanders, P. Engineering faster sorters for small sets of
+
+items. Software: Pract. Exper. 51, 965–1004 (2021).
+
+18. Levcopoulos, C. & Petersson, O. Splitsort: an adaptive sorting algorithm. Inform. Proc.
+
+Lett. 39, 205–211 (1991).
+
+19. Helman, D. R., Bader, D. A. & JáJá, J. A randomized parallel sorting algorithm with an
+
+experimental study. J. Parallel Distrib. Comput. 52, 1–23 (1998).
+
+20. Goodrich, M. T. Randomized shellsort: a simple oblivious sorting algorithm. In Proc. of the Twenty-First Annual ACM-SIAM Symposium on Discrete Algorithms 1262–1277 (ACM, 2010).
+
+21. Mehlhorn, K., Sanders, P. & Sanders, P. Algorithms and Data Structures: The Basic Toolbox
+
+Vol. 55. (Springer, 2008).
+
+22. Knebl, H. Algorithms and Data Structures (Springer, 2020). 23. Karatzoglou, A., Baltrunas, L. & Shi, Y. Learning to rank for recommender systems. In Proc.

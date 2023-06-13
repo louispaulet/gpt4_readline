@@ -1,0 +1,79 @@
+three or two numbers as input. In this case, if the length is two, then it calls the sort 2 sorting network and returns. If the length is three then it calls sort 3 to sort the first three numbers and returns. If, however, the length is greater than three, then it calls sort 3, followed by a simplified sort 4 routine that sorts the remaining unsorted number. It is this part of the routine that results in significant latency savings.
+
+as seen in Table 2b (on the left). One can show that as part of sort 8, the input that flows into the operator satisfies the following inequality: D ≥ min(A, C). This means that the operator can be improved by apply- ing the AlphaDev copy move that is defined in Table 2b (on the right), resulting in one instruction less than the original operator. The code difference between the original operator and the code after applying the AlphaDev copy move is visualized in Fig. 3e,f, respectively.
+
+New variable sort algorithms The VarSort4 algorithm discovered by AlphaDev is particularly inter- esting. The flow diagram for the human benchmark algorithm and AlphaDev can be seen in Fig. 4a,b, respectively. The human bench- mark algorithm determines the length of the input vector, and then calls the corresponding sorting network to sort the elements. The AlphaDev solution has a completely different approach as seen in Fig. 4b. If the length of the input vector is strictly greater than 2,
+
+Table 2 | Analysis of the AlphaDev swap and copy moves
+
+(a) Input
+
+Original output
+
+AlphaDev swap move
+
+A
+
+B
+
+C
+
+min(A, B, C)
+
+min(A, B)
+
+max(min(A, C), B)
+
+max(min(A, C), B)
+
+max(A, C)
+
+max(A, C)
+
+(b) Input
+
+Original output
+
+AlphaDev copy move
+
+A
+
+B
+
+C
+
+D
+
+min(A, B, C, D)
+
+min(A, B, C, D)
+
+max(B, min(A, C, D))
+
+max(B, min(A, C))
+
+max(C, min(A, D))
+
+max(C, min(A, D))
+
+max(A, D)
+
+max(A, D)
+
+a, Left shows the transformation applied to inputs A, B and C in a classic sorting network when
+
+applying the circled operator in Fig. 3a. Right shows the AlphaDev swap move transformation
+
+applied in place of the circled operator. Note the new transformation in bold that saves a
+
+single instruction each time it is applied. b, Left shows the transformation applied to inputs
+
+A, B, C and D according to the sorting network configuration in Fig. 3d. Right shows the
+
+AlphaDev copy move transformation applied to this sorting network configuration. The
+
+transformation in bold indicates the change made by the copy move, saving an instruction
+
+each time it is applied.
+
+then sort 3 is immediately called, resulting in the first three elements being sorted. If the vector is greater than three elements, then a simpli fied sort 4 algorithm is called that sorts the remaining unsorted elements in the input vector. It is this simplified part of the routine that yields significant gains in terms of algorithmic length and latency.

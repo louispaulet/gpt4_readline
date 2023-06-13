@@ -1,0 +1,97 @@
+Representing algorithms as low-level CPU instructions When compiling algorithms to machine code from a high level language such as C++ (for example, the sorting function in Fig. 1a), the algorithm is first compiled into assembly (Fig. 1b). The assembler then converts the assembly program into executable machine code. In this work, we optimize algorithms at the assembly level30. In a typical assembly pro- gram, the values are copied from memory into registers, manipulated between registers and then written back to memory. The set of assembly instructions supported depends on the processor architecture. For the purposes of this work, we focus on a subset of assembly instructions supported by the x86 processor architecture using the AT&T syntax36. Each instruction is of the format Opcode⟨OperandA, OperandB⟩. An example instruction is mov<A,B>, which is defined as move a value from source (A) to destination (B). Further instruction definitions such as compare (cmp<A,B>), conditional move (cmovX<A,B>) and jump ( jX<A>) can be found in Extended Data Table 1. In the example in Fig. 1b, %eax, %ecx, %edx, %edi correspond to four different register locations and (%rsi), 4(%rsi) correspond to two different memory locations. The symbol $2 is a placeholder for a constant value, which corresponds to the length of the vector in this example. We use the terms assembly program and assembly algorithm interchangeably in this work. This is because AlphaDev builds an assembly program from scratch, from an initially unordered set of instructions, each time it plays Assemb- lyGame, defining a new and efficient algorithm.
+
+executing the current algorithm on a set of predefined inputs. As seen in Fig. 2a, at timestep t, the player receives the current state St and executes an action at. This involves appending a legal assembly instruc- tion (for example, mov<A,B>) to the current algorithm generated thus far. A reward rt is received that comprises both a measure of algorithm correctness and latency. Algorithm correctness (Fig. 2b) involves input- ting a set of N test sequences into the current algorithm Pt to generate N outputs. These outputs are then compared to the expected outputs and a correctness reward rt is computed. Latency rewards can be gen- erated by either (1) penalizing the agent for increasing the length of the algorithm (when length and latency are highly correlated) that we refer to as the algorithm length reward, or (2) measuring the actual latency of the algorithm. The game is executed for a limited number of steps, after which the game is terminated. Winning the game corre- sponds to generating a correct, low-latency algorithm using assembly instructions. Losing the game corresponds to generating an incorrect algorithm or a correct but inefficient algorithm.
+
+Table 1 | AlphaDev performance when optimizing for algorithm length and latency
+
+(a) Algorithm
+
+AlphaDev
+
+Length
+
+Human benchmarks
+
+Length
+
+Sort 3
+
+Sort 4
+
+Sort 5
+
+VarSort3
+
+VarSort4
+
+VarSort5
+
+VarInt
+
+17
+
+28
+
+42
+
+21
+
+37
+
+63
+
+27
+
+18
+
+28
+
+46
+
+33
+
+66
+
+115
+
+31
+
+(b) Algorithm AlphaDev
+
+Human benchmarks
+
+Latency ± (lower, upper)
+
+Latency ± (lower, upper)
+
+VarSort3
+
+VarSort4
+
+VarSort5
+
+VarInt
+
+236,498 ± (235,898, 236,887)
+
+246,040 ± (245,331, 246,470)
+
+279,339 ± (278,791, 279,851)
+
+294,963 ± (294,514, 295,618)
+
+312,079 ± (311,515, 312,787)
+
+331,198 ± (330,717, 331,850)
+
+97,184 ± (96,885, 97,847)
+
+295,358 ± (293,923, 296,297)
+
+Competitive
+
+75,973 ± (75,420, 76,638)
+
+86,056 ± (85,630, 86,913)
+
+DRL for discovering faster algorithms In this section, we formulate optimizing algorithms at the CPU instruc- tion level as a reinforcement learning (RL) problem37, in which the environment is modelled as a single-player game that we refer to as AssemblyGame. Each state in this game is defined as a vector St = ⟨Pt, Zt⟩ where Pt is a representation of the algorithm generated thus far in the game and Zt represents the state of memory and registers after

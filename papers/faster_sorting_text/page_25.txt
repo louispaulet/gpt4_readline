@@ -1,0 +1,31 @@
+Author contributions D.J.M., A.Michi and A.Z. conceived the idea and lead the research. A.Michi, D.J.M., A.Z., M.G., M.S., C.P., E.L., S.I. and A.Mandhane developed the neural network architecture and training. J.-B.L., C.P., M.G., D.J.M. and E.L. developed the baseline. M.G., A.Z., D.J.M., M.H., A.A., T.K. and K.Millikin analysed the generated algorithms and helped with the sort patch. D.J.M., A.Michi, A.Z., S.G., S.E., J.B., R.T., C.G. and K.Milan, managed the research. A.Michi, M.G. and M.S. led the technical platform. A.Mandhane, T.H., Y.L., J.S., T.C., M.B., P.K., M.R., D.S., O.V. and D.H. contributed technical advice and ideas. D.J.M. and A.Z. conceived the project. D.J.M., C.P., E.L., A.Michi, M.G., A.Z., P.K. and M.S. wrote the paper.
+
+Competing interests D.J.M., A.Michi, A.Z., M.G., M.S., C.P., E.L., S.I., A.Mandhane, P.K., M.R., D.S. and O.V. are planning to file a patent application relating to subject matter contained in this paper in the name of DeepMind Technologies Limited. The remaining authors declare no competing interests.
+
+Additional information Supplementary information The online version contains supplementary material available at https://doi.org/10.1038/s41586-023-06004-9. Correspondence and requests for materials should be addressed to Daniel J. Mankowitz. Peer review information Nature thanks Zheng Wang and the other, anonymous, reviewer(s) for their contribution to the peer review of this work. Reprints and permissions information is available at http://www.nature.com/reprints.
+
+Extended Data Fig. 1 | The AlphaDev representation network architecture. (a) The AlphaDev representation network comprises a Transformer Encoder network that receives as input the assembly algorithm generated thus far. It also contains a CPU State Encoder network that receives as input the current state of memory and registers. The exact architecture and hyperparameters
+
+can be found in the Supplementary Information, Appendix A. (b) Before inputting instructions into the Transformer Encoder network, each program instruction’s opcode and operands are converted to one-hot encodings and concatenated. The resulting encoding is then fed into the Transformer Encoder network.
+
+Extended Data Fig. 2 | An example sorting network43. (a) The horizontal lines are called wires and the vertical lines are called comparators. (b) An initially unsorted sequence of values are input into the sorting network on the left hand side. At various stages two wires encounter a comparator. If the value at the top
+
+of the comparator is smaller than the value at the bottom of the comparator, the numbers switch wires. An optimal sorting network places comparators in specific positions so as to sort any sequence of unsorted values using the minimum number of comparators.
+
+Extended Data Fig. 3 | Hypothesis for improved exploration using AlphaDev. (a) A 2D t-SNE51 projection indicating the regions explored by AlphaDev (blue) compared to AlphaDev-S. (b) The same 2D t-SNE projection as in (a) with algorithm correctness superimposed onto each point from incorrect
+
+programs (purple) to correct programs (yellow). As seen in the figure, AlphaDev-S struggles to move out of local optima whereas AlphaDev is able to explore from the space of incorrect programs to the space of correct programs.
+
+Extended Data Table 1 | Additional Assembly instructions
+
+This table contains a list of additional assembly X86 instructions using AT&T syntax and their corresponding description.
+
+Extended Data Table 2 | Comparison of AlphaDev and AlphaDev-S for fixed sort
+
+(a) Presents the shortest programs found by each approach. Note that AlphaDev-S-CS is
+
+unable to discover a sorting function when training from scratch. AlphaDev-S-WS, which is
+
+initialized with a near-optimal program, is able to match the performance of AlphaDev, which
+
+discovers the optimal programs from scratch. (b) Indicates the number of programs explored

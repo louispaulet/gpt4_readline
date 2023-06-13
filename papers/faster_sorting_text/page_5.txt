@@ -1,0 +1,77 @@
+a, AlphaDev performance, compared to the human benchmarks, when optimizing for
+
+algorithm length. AlphaDev discovers algorithms from scratch that match or improve on
+
+the human benchmarks in each case. b, AlphaDev performance, compared to the human
+
+benchmarks, when optimizing directly for latency. In this setup, AlphaDev discovers algorithms
+
+that have significantly lower latency than the human benchmarks in each case. The confidence
+
+intervals are represented as latency ± (lower, upper), in which latency corresponds to the fifth
+
+percentile of latency measurements across 100 different machines. Lower and upper refer to
+
+the bounds of the 95% confidence interval for this percentile.
+
+258 | Nature | Vol 618 | 8 June 2023
+
+a
+
+b
+
+AlphaDev
+
+Algorithm
+
+…
+
+St
+
+at
+
+MOV<Register0,Memory1>
+
+MOV<Register0,Memory1>
+
+Algorithmt
+
+…
+
+MOV<Register0,Memory1>
+
+All test input sequences
+
+A
+
+B
+
+C
+
+Output
+
+Expected output
+
+A′
+
+D′
+
+C′
+
+= ?
+
+A′
+
+B′
+
+C′
+
+rt
+
+Fig. 2 | The AssemblyGame and algorithm correctness computation. a, The AssemblyGame is played by AlphaDev, which receives as input the current assembly algorithm generated thus far St and plays the game by selecting an action to execute. In this example, the action is a mov<Register0,Memory1> assembly instruction, which is appended to the current algorithm. The agent receives a reward that is a function of the algorithm’s correctness, discussed in b, as well as the algorithm’s latency. The game is won by the player discovering a low latency, correct algorithm. b, The program correctness and latency
+
+computations are used to compute the reward rt. In this example, test sequences are input to the algorithm; for example, in the case of sorting three elements, test inputs comprise all sequences of unsorted elements of length 3. For each sequence, the algorithm output is compared to the expected output (in the case of sorting, the expected output is the sorted elements). In this example, the output DD′′ does not match the expected output BB′′ and the algorithm is therefore incorrect.
+
+We refer to the agent that plays this single-player game as AlphaDev. The agent’s primary learning algorithm is an extension of the AlphaZero agent32 and guides a Monte Carlo tree search (MCTS) planning proce- dure using a deep neural network33,38. The input to the neural network is the state St and the output is a policy and value prediction. The policy prediction is a distribution over actions and the value function is a prediction of the cumulative returns R that the agent should expect to receive from the current state St. During a game, the agent receives as input the current state St. The agent then executes an MCTS pro- cedure and uses this to select the next action to take. The generated games are then used to update the network’s parameters, enabling the agent to learn.
+
+It is critical that AlphaDev has a representation39,40 capable of rep- resenting complex algorithmic structures to efficiently explore the space of instructions. To achieve this, we introduce the AlphaDev representation network (Extended Data Fig. 1a). This network com- prises two components, namely (1) a transformer encoder network that provides the agent with a representation of the algorithm structure, and (2) the CPU state encoder network that helps the agent predict how the algorithm affects the dynamics of memory and registers. The CPU state encoder network comprises a multi- layer perceptron that receives as input the state of each register and memory location for a given set of inputs. These networks each output embeddings that are combined to yield the AlphaDev state representation.

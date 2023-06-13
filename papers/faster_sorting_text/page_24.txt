@@ -1,0 +1,69 @@
+Code availability We have also released pseudocode at https://github.com/deepmind/ alphadev that includes the environment, the full actor and training loops as well as the core MCTS algorithm. In addition, we include our actual JAX implementation of our policy, value and representation networks that enable the architectures to be reproduced. Finally, we have a config file containing the hyperparameter definitions to be used with the agent.
+
+50. Hwang, M. Sort, Bitset (GitHub, 2021). 51. Van der Maaten, L. & Hinton, G. Visualizing data using t-SNE. J. Mach. Learn. Res. 9.11,
+
+2579–2605 (2008).
+
+52. Gulwani, S. et al. Synthesis of loop-free programs. ACM SIGPLAN Notices 46.6, 62–73
+
+(2011).
+
+53. Sasnauskas, R. et al. Souper: a synthesizing superoptimizer. Preprint at https://arxiv.org/
+
+abs/1711.04422 (2017).
+
+54. Warren, H. S. Hacker’s Delight (Pearson Education, 2013). 55. Hamadi, Y., Jabbour, S. & Sais, L. ManySAT: a parallel SAT solver. J. Satisfiability, Boolean
+
+Model. Comput. 6, 245–262 (2010).
+
+56. Wolsey, L. A. Mixed integer programming. In Wiley Encyclopedia of Computer Science
+
+and Engineering 1–10 (Wiley, 2007).
+
+57. Nair, V. et al. Solving mixed integer programs using neural networks. Preprint at https://
+
+58.
+
+arxiv.org/abs/2012.13349 (2020). Inoue, H. et al. AA-sort: a new parallel sorting algorithm for multi-core SIMD processors. In Proc. International Conference on Parallel Architecture and Compilation Techniques (PACT 2007) 189–198 (IEEE, 2007).
+
+59. Yin, Z. et al. Efficient parallel sort on avx-512-based multi-core and many-core architectures. In Proc. IEEE 21st International Conference on High Performance Computing and Communications 168–176 (IEEE, 2019).
+
+60. Blacher, M. et al. Vectorized and performance-portable Quicksort. Preprint at https://
+
+arxiv.org/abs/2205.05982 (2022).
+
+61. Wikipedia. Single instruction, multiple data https://en.m.wikipedia.org/wiki/SIMD (2022).
+
+62. Ellis, K. et al. Write, execute, assess: program synthesis with a REPL. Adv. Neural Inform.
+
+Proc. Syst.32, 9137–9146 (2019).
+
+63. Wang, H. et al. Automating reinforcement learning architecture design for code optimization. In Proc. 31st ACM SIGPLAN International Conference on Compiler Construction 129–143 (ACM, 2022).
+
+64. Shypula, A. G. et al. Learning to superoptimize real-world programs. Preprint at https://
+
+arxiv.org/abs/2109.13498 (2022).
+
+65. Chen, X., Liu, C. & Song, D. Execution-guided neural program synthesis. In Proc.
+
+International Conference on Learning Representations (ICLR, 2018).
+
+66. Bunel, R. et al. Leveraging grammar and reinforcement learning for neural program
+
+synthesis. In Proc. International Conference on Learning Representations (ICLR, 2018). 67. Aharoni, R. & Goldberg, Y. Towards string-to-tree neural machine translation. In Proc. 55th Annual Meeting of the Association for Computational Linguistics132–140 (ACL, 2017). 68. Dong, L. & Lapata, M. Language to logical form with neural attention. In Proc. 54th Annual
+
+69.
+
+Meeting of the Association for Computational Linguistics 33–43 (ACL, 2016). Ibarz, B. et al. A generalist neural algorithmic learner. In Proc. Learning on Graphs Conference Vol. 198, 2:1–2:23 (PMLR, 2022).
+
+70. Chen, X., Song, D. & Tian, Y. Latent execution for neural program synthesis beyond domain-specific languages. Adv. Neural Inform. Proc. Syst. 34, 22196–22208 (2021).
+
+71. Parisotto, E. et al. Neuro-symbolic program synthesis. Preprint at https://arxiv.org/
+
+abs/1611.01855 (2016).
+
+72. Ellis, K., Solar-Lezama, A. & Tenenbaum, J. Sampling for Bayesian program learning. Adv.
+
+Neural Inform. Proc. Syst. 29, 1297–1305 (2016).
+
+Acknowledgements We thank P. Kurylowicz, N. Anderson and Z. Ahmed for assistance coordinating the research; L. Dionne and N. Klauser for patiently reviewing our LLVM code; and N. Vaish, D. Gove, D. Kutenin and A. Fawzi for their helpful advice during the course of the project. We also thank our colleagues at DeepMind for their encouragement and support.
